@@ -8,8 +8,8 @@
 import SwiftUI
 import SwiftData
 
-@main
-struct guadalupereportaApp: App {
+//@main
+struct GuadalupereportaApp: App {
     var sharedModelContainer: ModelContainer = {
         let schema = Schema([
             Item.self,
@@ -25,7 +25,8 @@ struct guadalupereportaApp: App {
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
+//            ContentView()
+            HomeScreen()
         }
         .modelContainer(sharedModelContainer)
     }
