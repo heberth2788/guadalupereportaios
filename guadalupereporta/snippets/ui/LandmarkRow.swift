@@ -32,8 +32,7 @@ struct LandmarkRow: View {
 
 #Preview("Group") {
     Group {
-        let size: Int = landmarksData.count
-        ForEach(0 ..< size) { index in
+        ForEach(0 ..< 12) { index in
             LandmarkRow(landmark: landmarksData[index])
         }
     }
