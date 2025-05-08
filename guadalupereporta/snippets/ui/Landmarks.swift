@@ -16,4 +16,5 @@ struct Landmarks: View {
 
 #Preview {
     Landmarks()
+        .environment(ModelData())
 }

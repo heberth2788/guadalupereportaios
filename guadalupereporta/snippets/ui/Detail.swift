@@ -14,23 +14,31 @@ struct LandmarkDetail: View {
         ScrollView {
             MapView(coordinate: landmark.locationCoordinates)
                 .frame(height: 200)
+            
             CircleImage(image: landmark.image)
                 .offset(y: -130)
                 .padding(.bottom, -130)
+            
             VStack(alignment: .leading) {
                 Text(landmark.name)
                     .font(.title)
                     .foregroundColor(.blue)
+                
                 HStack {
                     Text(landmark.park)
                         .font(.subheadline)
+                    
                     Spacer()
+                    
                     Text(landmark.state)
                         .font(Font.subheadline)
                 }
+                
                 Divider()
+                
                 Text("About \(landmark.name)")
                     .font(.title2)
+                
                 Text(landmark.description)
             }
             .padding()
@@ -41,5 +49,5 @@ struct LandmarkDetail: View {
 }
 
 #Preview {
-    LandmarkDetail(landmark: landmarksData[0])
+    LandmarkDetail(landmark: ModelData().landmarksData[0])
 }
