@@ -23,7 +23,7 @@ struct HikeView: View {
     var hike: Hike
     
     @State
-    private var showDetail = false
+    private var showDetail = true
 
     var body: some View {
         VStack {
