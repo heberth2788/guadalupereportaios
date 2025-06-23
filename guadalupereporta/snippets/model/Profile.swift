@@ -14,7 +14,7 @@ struct Profile {
     var goalDate: Date = Date()
     
     // 'default' is a reserved keyword, however, when we need to use it as
-    // identifier, we need to enclose it with `` characters.
+    // identifier, we need to enclose it with ``(backticks) characters.
     static let `default` = Profile(username: "g_kumar")
     
     enum Season: String, CaseIterable, Identifiable {
