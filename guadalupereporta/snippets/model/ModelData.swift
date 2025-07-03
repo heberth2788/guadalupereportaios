@@ -12,6 +12,7 @@ class ModelData {
     
     var landmarksData: [Landmark] = load("landmarkData.json")
     var hikes: [Hike] = load("hikeData.json")
+    var profile = Profile.default
     
     var features: [Landmark] {
         landmarksData.filter{ $0.isFeatured }
