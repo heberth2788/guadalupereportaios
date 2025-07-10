@@ -28,8 +28,7 @@ struct ProfileHost: View {
             if editMode?.wrappedValue == EditMode.inactive {
                 ProfileSummary(profile: modelData.profile)
             } else {
-                Text("Profile editor not implemented yet")
-                Spacer()
+                ProfileEditor(profile: $draftProfile)
             }
             
         }
